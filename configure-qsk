@@ -70,7 +70,7 @@ echo Extra configure options: $EXTRAOPTS
 
 # Use GLES1 for simulator and GLES2 for device
 # TODO: Remove this when simulator supports GLES2
-if [ "CPU" == "x86" ]; then
+if [ $CPU == "x86" ]; then
   GL_VERSION="es1"
   echo "Using OpenGL ES 1.0"
 else
